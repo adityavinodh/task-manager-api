@@ -4,16 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>0606 Revision Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
-    <a href="register.html">Register</a>
-    <form method="POST" action="/users/login">
-      <label for="email">Email</label>
-      <input type="text" name="email" id="email" />
-      <label for="password">Password</label>
-      <input type="text" name="password" id="password" />
-      <button>Login</button>
-    </form>
+    <header>
+      <div id="title-div">
+        <a href="/" id="title">0606 Revision Hub</a>
+      </div>
+			<nav>
+					<div id="nav-content">
+							<div class="nav" id="nav-1"><strong><a href="index.html">Home</a></strong><a href="resources.html">What we do?</a></div>
+							<div class="nav" id="nav-2"><a href="practicepapers.html">Our Team</a><a href="pastpapers.html">Testimonials</a></div>
+							<div class="nav" id="nav-3"><a href="contact.html">Contact</a><a href="/login.html" id="subscribe">Login</a></div>
+					</div>
+			</nav>
+    </header>
+
+    <div class="content">
+
+      <div class="row" style="display: flex; flex-wrap: wrap;">
+        <div class="col-1" style="align-self: center;">
+          <div>
+            <p style="font-size: 40px; font-weight: 700; padding: 60px; padding-bottom: 20px; padding-top: 0; margin-top: 0;color: #FF8A00; line-height: 158.34%;">Be a part of our online community and get access to unlimited resources, all for free!</p>
+            <p style="font-size: 20px; font-weight: 600; padding-left: 60px; color: #FFC000;">Sign up for an account here, or sign in. You're all set!</p>
+            <br>
+            <a href="#" id="explore-btn">Explore more</a>
+          </div>
+        </div>
+        <div class="col-2" style="text-align: center;">
+          <div id="#signup-container" style="width: 65%; background: linear-gradient(257.14deg, rgba(255, 192, 0, 0.55) 1.55%, rgba(255, 138, 0, 0.75) 95.27%);
+          backdrop-filter: blur(30px); text-align: center; display: inline-block;">
+            <form id="signup-form" method="POST" action="/users" onsubmit="return formSubmit()">
+              <p style="color: #FFFFFF; font-weight: 900; font-size: 30px; padding-top: 50px">Create an account</p>
+              <input type="text" name="name" id="name" placeholder="Name" required/>
+              <input type="email" name="email" id="email" placeholder="Email" required/>
+              <input type="password" name="password" id="password" placeholder="Password" required/>
+              <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm your password" required/>
+              <br>
+              <input type="submit" value="Sign Up" id="signup-btn">
+              <img src="loader.gif" alt="Loading..." width="100" id="loader">
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- <a href="/">Login</a>
+      <form method="POST" action="/users">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" />
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" />
+        <label for="password">Password</label>
+        <input type="text" name="password" id="password" />
+        <button>Register</button>
+      </form> -->
+
+    </div>
+    <script src="app.js"></script>
   </body>
 </html>

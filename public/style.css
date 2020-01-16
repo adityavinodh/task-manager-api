@@ -1,0 +1,222 @@
+html, body {    
+	margin: 0;
+	padding: 0;
+	overflow-x: initial !important;
+	font-family: 'Raleway', sans-serif;
+	min-height: 100%;
+}
+header {
+	float: top;
+	height: 100px;
+	width: 100%;
+    background-color: white;
+    box-shadow: 0px 10px 5px rgba(184, 184, 184, 0.281);
+    position: fixed;
+    top: 0;
+    margin-bottom: 100px;
+    z-index: 1;
+}
+
+header + .content {
+    padding-top: 100px;
+}
+#title-div {
+	float: left;
+	margin: 0;
+	padding: 31.5px;
+	color: #ffa32b;
+}
+nav {
+	float: right;
+    padding: 40px;
+}
+a {
+	text-decoration: none;
+	color: #ffa32b;
+	padding: 10px;
+	margin: 25px;
+	outline: 0;
+	position: relative;
+	border: none;
+	transition: 0.2s;
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.nav {
+	display: inline;
+}
+a:hover {
+	transition: 0.2s;
+	color:#ffa32b;
+}
+a:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #ffa32b;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.2s ease-in-out 0s;
+	transition: all 0.2s ease-in-out 0s;
+}
+a:hover:before {
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+	
+}
+#title:hover:before {
+    visibility: hidden;
+}
+#subscribe {
+    background: linear-gradient(229.9deg, #FFC000 1.55%, #FF8A00 95.8%);
+/* 3 */
+
+box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+border-radius: 100px;
+    color: white;
+	border-radius: 20px;
+	border: none;
+    transition: 0.3s;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+#subscribe:hover {
+    box-shadow: 0px 12px 35px rgb(199, 199, 199);
+	transition: 0.5s;
+}
+#subscribe:hover:before {
+	display: none;
+}
+.linebreak {
+	display: none;
+}
+
+#title {
+    font-size: 30px;
+    font-weight: bold;
+}
+#nav-content {
+    display: flex;
+}
+
+.row {
+    width: 100%;
+}
+.col-1 {
+    width: 50%;
+    float: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    padding-bottom: 50px;
+}
+.col-2 {
+    width: 50%;
+    float: right;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    padding-bottom: 50px;
+}
+
+input {
+    width: 55%;
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    border-radius: 100px;
+    height: 40px;
+    padding-left: 20px;
+    color: #5C5C5C;
+    font-family: Raleway;
+    outline: none;
+    margin-bottom: 30px;
+}
+#signup-btn {
+    background: linear-gradient(205.7deg, #FFA32A 1.55%, #FF8A00 95.8%);
+/* 3 */
+
+box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+border-radius: 100px;
+    color: white;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#signup-btn:hover {
+    box-shadow: 0px 12px 35px rgba(131, 131, 131, 0.521);
+    transition: 0.5s;
+}
+#loader {
+    display: none;
+}
+#explore-btn {
+    width: 50px; height: 20px;background: linear-gradient(229.9deg, #FFC000 1.55%, #FF8A00 95.8%);
+            /* 3 */
+            
+            box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2); border-radius: 100px; color: white; margin-left: 60px; margin-top: 50px;
+}
+
+#explore-btn:hover:before {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 1382px) {
+    #title-div {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    nav {
+        width: 100%;
+        align-self: auto;
+        float: none;
+        align-content: space-around;
+        margin: 0;
+        padding: 0;
+    }
+    #nav-content {
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        height: 150px;
+    }
+    header + .content {
+        padding-top: 175px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .col-1 {
+        width: 100%;
+        float: top;
+    }
+    .col-2 {
+        width: 100%;
+        float: bottom;
+    }
+}
+@media screen and (max-width: 895px) {
+    nav {
+        display: none;
+    }
+    header {
+        height: 100px
+    }
+    header + .content {
+        padding-top: 100px;
+    }
+}
